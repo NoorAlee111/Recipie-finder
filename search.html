@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <style>
+        body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(210, 177, 14);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+ 
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+#search-container {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 5px;
+  width: 300px;
+}
+#results-container.div{
+  border: 3 px solid black;
+
+}
+
+#search-button {
+  padding: 5px 10px;
+}
+
+#results-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+    </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+<header>
+  <h1 style="background-color: rgb(211, 191, 35);color: beige; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Recipe Finder</h1>
+  
+  <!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark "style="background-color:black" >
+<div class="container-fluid">
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+<ul class="navbar-nav ">
+  <li class="nav-item">
+    <a href="index.html" target="_blank" class="nav-link active" aria-current="page" href="#">Home</a>
+    
+  </li>
+  
+  <li class="nav-item ">
+    <a href="search.html" target="_blank"  class="nav-link active" aria-current="page"  href="#">Balanced Recipes</a>
+  </li>
+  <li class="nav-item">
+    <a  href="" target="_blank"  class="nav-link active" aria-current="page" href="#">Vegetarian Recipes</a>
+  </li>
+  <li class="nav-item">
+    <a  href="ContactUs.html" target="_blank"  class="nav-link active" aria-current="page"  href="#">Contact Us</a>
+  </li>
+</ul>
+</div>
+<div class="collapse navbar-collapse justify-content-right " id="navbarNav"></div>
+<span class="navbar-text ">
+ 
+</span>
+</div>
+
+
+</div>
+</nav>
+</div>
+</header>
+<!-- NavBar -->
+      
+      <main>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search recipes...">
+          <button id="search-button">Search</button>
+        </div>
+        
+        <div class = "results-container" id="results-container"></div>
+      </main>
+      
+      <script src="app.js"></script>
+</body>
+</html>
